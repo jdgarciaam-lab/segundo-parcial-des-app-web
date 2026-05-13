@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "nombre": "Nike Mercurial Vapor 16",
+    "precio": 580000,
+    "categoria": "Césped",
+    "imagen": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/99486826-73b7-4e2d-a1f1-7c7c6e89b9e0/mercurial-vapor-16-elite-fg-calzado-de-futbol-de-perfil-bajo-psqS5s.png"
+  },
+  {
+    "id": 2,
+    "nombre": "Adidas Predator Elite FG",
+    "precio": 620000,
+    "categoria": "Césped",
+    "imagen": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8c5a7d6a4e4b4a3c9b1a2c3d4e5f6a7b/9366/Predator_Elite_FG_Blanco_IE1808_01_standard.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "New Balance Furon v7+",
+    "precio": 460000,
+    "categoria": "Césped",
+    "imagen": "https://nb.scene7.com/is/image/NB/msfutwv7_nb_02_i?$pdpflexf2$"
+  },
+  {
+    "id": 4,
+    "nombre": "Nike Phantom GX Elite AG",
+    "precio": 650000,
+    "categoria": "Sintético",
+    "imagen": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6f2b4c1e-8a5d-4b3f-9c6e-1d2a3b4c5d6e/phantom-gx-elite-ag-pro-calzado-de-futbol-5XqKjv.png"
+  },
+  {
+    "id": 5,
+    "nombre": "Adidas Copa Pure 2+ AG",
+    "precio": 540000,
+    "categoria": "Sintético",
+    "imagen": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/9a8b7c6d5e4f3a2b1c0d/COPAPURE2_AG_Blanco_IG2169_01_standard.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Puma Future Ultimate FG",
+    "precio": 550000,
+    "categoria": "Césped",
+    "imagen": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1050,h_1050/107267_01_PNA"
+  },
+  {
+    "id": 7,
+    "nombre": "Nike Street Gato IC",
+    "precio": 420000,
+    "categoria": "Microfútbol",
+    "imagen": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d1e2f3a4-5b6c-7d8e-9f0a-1b2c3d4e5f6g/nike-street-gato-ic-calzado-de-futbol-sala-J5kLmN.png"
+  },
+  {
+    "id": 8,
+    "nombre": "Adidas Sala IC",
+    "precio": 395000,
+    "categoria": "Microfútbol",
+    "imagen": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/1a2b3c4d5e6f7g8h9i0j/ADIDAS_SALA_IC_Blanco_IG2170_01_standard.jpg"
+  },
+  {
+    "id": 9,
+    "nombre": "Max Sport Indoor Pro",
+    "precio": 320000,
+    "categoria": "Microfútbol",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_123456-MLA78901234567_052024-F.jpg"
+  },
+  {
+    "id": 10,
+    "nombre": "Puma Ultra Match FG",
+    "precio": 480000,
+    "categoria": "Césped",
+    "imagen": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1050,h_1050/107268_01_PNA"
+  }
+]
