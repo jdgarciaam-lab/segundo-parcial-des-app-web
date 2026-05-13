@@ -3,9 +3,7 @@ import productosIniciales from '@/data/products.json'
 const STORAGE_KEY = 'futtzap_productos'
 
 export function inicializarProductos() {
-  if (!localStorage.getItem(STORAGE_KEY)) {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(productosIniciales))
-  }
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(productosIniciales))
 }
 
 export function obtenerProductos() {

@@ -1,11 +1,10 @@
 <template>
   <div class="d-flex flex-column min-vh-100">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand bg-dark border-bottom border-success">
+    <nav class="navbar navbar-expand bg-dark border-bottom border-danger">
       <div class="container-fluid">
-        <router-link to="/dashboard" class="navbar-brand d-flex align-items-center">
-          <span class="fs-3 me-2">⚽</span>
-          <span class="text-success fw-bold fs-4">FUTTZAP</span>
+        <router-link to="/dashboard" class="navbar-brand">
+          <span class="text-danger fw-bold fs-4">FUTTZAP</span>
         </router-link>
         <div class="navbar-nav ms-auto">
           <router-link to="/dashboard" class="nav-link text-white">Inicio</router-link>
@@ -18,7 +17,7 @@
     <div class="d-flex flex-grow-1">
       <!-- Sidebar -->
       <nav class="bg-dark border-end border-secondary p-3" style="width: 220px;">
-        <h6 class="text-success mb-3">CATEGORÍAS</h6>
+        <h6 class="text-danger mb-3">CATEGORÍAS</h6>
         <ul class="nav flex-column">
           <li class="nav-item">
             <router-link to="/dashboard" class="nav-link text-white">Todos</router-link>

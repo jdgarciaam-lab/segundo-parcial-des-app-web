@@ -3,7 +3,7 @@
     <div class="card bg-dark border-secondary p-4" style="max-width: 400px; width: 100%;">
       
       <div class="text-center mb-4">
-        <h1 class="text-success fw-bold">⚽ FUTTZAP</h1>
+        <h1 class="text-danger fw-bold">⚽ FUTTZAP</h1>
         <p class="text-secondary">Tienda de zapatillas de fútbol</p>
       </div>
 
@@ -21,7 +21,7 @@
         <input v-model="password" type="password" class="form-control bg-dark text-white border-secondary" @keyup.enter="login" />
       </div>
 
-      <button @click="login" class="btn btn-success w-100 mb-3">ENTRAR</button>
+      <button @click="login" class="btn btn-danger w-100 mb-3">ENTRAR</button>
 
       <p class="text-center text-secondary small">
         ⚠️ Proyecto educativo - No usar datos reales

@@ -1,13 +1,12 @@
 <template>
   <div>
     <div class="d-flex justify-content-between align-items-center mb-3">
-      <h2 class="text-success">Gestión de Productos</h2>
-      <button @click="mostrarFormulario = !mostrarFormulario" class="btn btn-success">
+      <h2 class="text-danger">Gestión de Productos</h2>
+      <button @click="mostrarFormulario = !mostrarFormulario" class="btn btn-danger">
         <i class="bi bi-plus-lg me-1"></i> {{ mostrarFormulario ? 'Cancelar' : 'Nuevo Producto' }}
       </button>
     </div>
 
-    <!-- Formulario -->
     <div v-if="mostrarFormulario" class="card bg-dark border-secondary mb-4">
       <div class="card-body">
         <h5 class="text-white">{{ editando ? 'Editar Producto' : 'Nuevo Producto' }}</h5>
@@ -37,7 +36,7 @@
             <input v-model="form.imagen" class="form-control bg-dark text-white border-secondary" />
           </div>
           <div class="col-12">
-            <button @click="guardar" class="btn btn-success me-2">
+            <button @click="guardar" class="btn btn-danger me-2">
               {{ editando ? 'Actualizar' : 'Crear' }}
             </button>
             <button @click="mostrarFormulario = false" class="btn btn-outline-light">Cancelar</button>
@@ -46,7 +45,6 @@
       </div>
     </div>
 
-    <!-- Tabla -->
     <div class="table-responsive">
       <table class="table table-dark table-striped table-hover">
         <thead>
@@ -64,7 +62,7 @@
             <td>{{ p.id }}</td>
             <td>{{ p.nombre }}</td>
             <td>{{ p.categoria }}</td>
-            <td class="text-success fw-bold">${{ p.precio.toLocaleString() }}</td>
+            <td class="text-danger fw-bold">${{ p.precio.toLocaleString() }}</td>
             <td>{{ p.stock }}</td>
             <td>
               <button @click="editar(p)" class="btn btn-sm btn-outline-warning me-1">
