@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div style="min-height: 100vh; display: flex; flex-direction: column;">
     <NavbarComponent />
-    <div class="d-flex" style="margin-top: 56px;">
+    <div class="d-flex" style="flex: 1; margin-top: 56px;">
       <SidebarComponent />
       <main class="main-content flex-grow-1 p-4">
         <router-view />
@@ -12,12 +12,12 @@
 </template>
 
 <script>
-import NavbarComponent from "@/components/NavbarComponent.vue"
-import SidebarComponent from "@/components/SidebarComponent.vue"
-import FooterComponent from "@/components/FooterComponent.vue"
+import NavbarComponent from '@/components/NavbarComponent.vue'
+import SidebarComponent from '@/components/SidebarComponent.vue'
+import FooterComponent from '@/components/FooterComponent.vue'
 
 export default {
-  name: "DashboardView",
+  name: 'DashboardView',
   components: {
     NavbarComponent,
     SidebarComponent,

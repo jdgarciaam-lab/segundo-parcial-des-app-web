@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "nombre": "Nike Mercurial Vapor 16",
+    "precio": 580000,
+    "categoria": "Césped",
+    "stock": 15,
+    "imagen": "img/producto1.png",
+    "descripcion": "Velocidad extrema",
+    "marca": "Nike"
+  },
+  {
+    "id": 2,
+    "nombre": "Adidas Predator Elite FG",
+    "precio": 620000,
+    "categoria": "Césped",
+    "stock": 10,
+    "imagen": "img/producto2.png",
+    "descripcion": "Control total",
+    "marca": "Adidas"
+  },
+  {
+    "id": 3,
+    "nombre": "New Balance Furon v7+",
+    "precio": 460000,
+    "categoria": "Césped",
+    "stock": 8,
+    "imagen": "img/producto3.png",
+    "descripcion": "Estabilidad y velocidad",
+    "marca": "New Balance"
+  },
+  {
+    "id": 4,
+    "nombre": "Nike Phantom GX Elite AG",
+    "precio": 650000,
+    "categoria": "Sintético",
+    "stock": 12,
+    "imagen": "img/producto4.png",
+    "descripcion": "Precisión quirúrgica",
+    "marca": "Nike"
+  },
+  {
+    "id": 5,
+    "nombre": "Adidas Copa Pure 2+ AG",
+    "precio": 540000,
+    "categoria": "Sintético",
+    "stock": 7,
+    "imagen": "img/producto5.png",
+    "descripcion": "Cuero genuino",
+    "marca": "Adidas"
+  },
+  {
+    "id": 6,
+    "nombre": "Max Sport Raptor AG",
+    "precio": 380000,
+    "categoria": "Sintético",
+    "stock": 20,
+    "imagen": "img/producto6.png",
+    "descripcion": "Diseño colombiano",
+    "marca": "Max Sport"
+  },
+  {
+    "id": 7,
+    "nombre": "Nike Street Gato IC",
+    "precio": 420000,
+    "categoria": "Microfútbol",
+    "stock": 18,
+    "imagen": "img/producto7.png",
+    "descripcion": "Suela IC plana",
+    "marca": "Nike"
+  },
+  {
+    "id": 8,
+    "nombre": "Adidas Sala IC",
+    "precio": 395000,
+    "categoria": "Microfútbol",
+    "stock": 14,
+    "imagen": "img/producto8.png",
+    "descripcion": "Clásico para microfútbol",
+    "marca": "Adidas"
+  },
+  {
+    "id": 9,
+    "nombre": "Max Sport Indoor Pro",
+    "precio": 320000,
+    "categoria": "Microfútbol",
+    "stock": 25,
+    "imagen": "img/producto9.png",
+    "descripcion": "Suela de goma especial",
+    "marca": "Max Sport"
+  },
+  {
+    "id": 10,
+    "nombre": "Puma Future Ultimate FG",
+    "precio": 550000,
+    "categoria": "Césped",
+    "stock": 11,
+    "imagen": "img/producto10.png",
+    "descripcion": "Tecnología PWRTAPE",
+    "marca": "Puma"
+  }
+]

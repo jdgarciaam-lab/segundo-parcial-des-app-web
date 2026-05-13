@@ -20,7 +20,7 @@ const routes = [
     children: [
       {
         path: '',
-        redirect: 'products'
+        redirect: { name: 'Products' }
       },
       {
         path: 'products',
@@ -36,7 +36,6 @@ const router = createRouter({
   routes
 })
 
-// Guard de autenticación
 router.beforeEach((to, from, next) => {
   const usuario = localStorage.getItem('usuarioActivo')
   if (to.meta.requiresAuth && !usuario) {
