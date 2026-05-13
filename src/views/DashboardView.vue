@@ -9,6 +9,7 @@
         </router-link>
         <div class="navbar-nav ms-auto">
           <router-link to="/dashboard" class="nav-link text-white">Inicio</router-link>
+          <router-link to="/dashboard/products" class="nav-link text-white">Administrar</router-link>
           <a href="#" @click="logout" class="nav-link text-danger">Salir</a>
         </div>
       </div>
@@ -16,20 +17,20 @@
 
     <div class="d-flex flex-grow-1">
       <!-- Sidebar -->
-      <nav class="bg-dark border-end border-secondary p-3" style="width: 220px; min-height: calc(100vh - 56px);">
+      <nav class="bg-dark border-end border-secondary p-3" style="width: 220px;">
         <h6 class="text-success mb-3">CATEGORÍAS</h6>
         <ul class="nav flex-column">
           <li class="nav-item">
-            <router-link to="/dashboard/products" class="nav-link text-white">Todos</router-link>
+            <router-link to="/dashboard" class="nav-link text-white">Todos</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/dashboard/products/cesped" class="nav-link text-white">Césped</router-link>
+            <router-link to="/dashboard/categoria/cesped" class="nav-link text-white">Césped</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/dashboard/products/sintetico" class="nav-link text-white">Sintético</router-link>
+            <router-link to="/dashboard/categoria/sintetico" class="nav-link text-white">Sintético</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/dashboard/products/microfutbol" class="nav-link text-white">Microfútbol</router-link>
+            <router-link to="/dashboard/categoria/microfutbol" class="nav-link text-white">Microfútbol</router-link>
           </li>
         </ul>
       </nav>

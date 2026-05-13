@@ -13,10 +13,10 @@ const routes = [
     meta: { requiresAuth: true },
     children: [
       { path: '', component: HomeView },
-      { path: 'products', component: ProductView },
-      { path: 'products/cesped', component: ProductView, props: { categoria: 'Césped' } },
-      { path: 'products/sintetico', component: ProductView, props: { categoria: 'Sintético' } },
-      { path: 'products/microfutbol', component: ProductView, props: { categoria: 'Microfútbol' } }
+      { path: 'categoria/cesped', component: HomeView, props: { categoria: 'Césped' } },
+      { path: 'categoria/sintetico', component: HomeView, props: { categoria: 'Sintético' } },
+      { path: 'categoria/microfutbol', component: HomeView, props: { categoria: 'Microfútbol' } },
+      { path: 'products', name: 'Products', component: ProductView }
     ]
   }
 ]

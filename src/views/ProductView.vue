@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="d-flex justify-content-between align-items-center mb-4">
-      <h3 class="text-success">{{ titulo }}</h3>
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h2 class="text-success">Gestión de Productos</h2>
       <button @click="mostrarFormulario = !mostrarFormulario" class="btn btn-success">
         <i class="bi bi-plus-lg me-1"></i> {{ mostrarFormulario ? 'Cancelar' : 'Nuevo Producto' }}
       </button>
@@ -38,7 +38,7 @@
           </div>
           <div class="col-12">
             <button @click="guardar" class="btn btn-success me-2">
-              <i class="bi bi-check-lg me-1"></i> {{ editando ? 'Actualizar' : 'Crear' }}
+              {{ editando ? 'Actualizar' : 'Crear' }}
             </button>
             <button @click="mostrarFormulario = false" class="btn btn-outline-light">Cancelar</button>
           </div>
@@ -82,16 +82,10 @@
 </template>
 
 <script>
-import { obtenerProductos, obtenerProductosPorCategoria, crearProducto, actualizarProducto, eliminarProducto } from '@/services/productService'
+import { obtenerProductos, crearProducto, actualizarProducto, eliminarProducto } from '@/services/productService'
 
 export default {
   name: 'ProductView',
-  props: {
-    categoria: {
-      type: String,
-      default: ''
-    }
-  },
   data() {
     return {
       productos: [],
@@ -101,16 +95,9 @@ export default {
       form: { nombre: '', categoria: 'Césped', precio: 0, stock: 0, imagen: '' }
     }
   },
-  computed: {
-    titulo() {
-      return this.categoria ? `Productos - ${this.categoria}` : 'Todos los Productos'
-    }
-  },
   methods: {
     cargar() {
-      this.productos = this.categoria
-        ? obtenerProductosPorCategoria(this.categoria)
-        : obtenerProductos()
+      this.productos = obtenerProductos()
     },
     guardar() {
       if (!this.form.nombre || this.form.precio <= 0) return
@@ -130,7 +117,7 @@ export default {
       this.mostrarFormulario = true
     },
     eliminar(id) {
-      if (confirm('¿Eliminar este producto?')) {
+      if (confirm('¿Eliminar producto?')) {
         eliminarProducto(id)
         this.cargar()
       }
@@ -143,11 +130,6 @@ export default {
   },
   mounted() {
     this.cargar()
-  },
-  watch: {
-    categoria() {
-      this.cargar()
-    }
   }
 }
 </script>
