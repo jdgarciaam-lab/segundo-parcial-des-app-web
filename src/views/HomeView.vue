@@ -4,16 +4,16 @@
 
     <div class="row">
       <div class="col-md-4 mb-4" v-for="p in productos" :key="p.id">
-        <div class="card bg-dark border-secondary h-100">
-          <img :src="p.imagen" class="card-img-top p-3" :alt="p.nombre" style="height: 200px; width: 100%; object-fit: contain; background: #111;" />
+        <div class="card h-100" :class="tema === 'dark' ? 'bg-dark border-secondary' : 'bg-light border-secondary'">
+          <img :src="p.imagen" class="card-img-top" :alt="p.nombre" style="height: 250px; width: 100%; object-fit: contain; background: #111; border-radius: 5px 5px 0 0;" />
           <div class="card-body d-flex flex-column">
-            <h5 class="card-title text-white">{{ p.nombre }}</h5>
+            <h5 class="card-title" :class="tema === 'dark' ? 'text-white' : 'text-dark'">{{ p.nombre }}</h5>
             <p class="text-secondary small">{{ p.categoria }}</p>
             <p class="text-danger fw-bold fs-5 mt-auto">${{ p.precio.toLocaleString() }}</p>
             <div class="d-flex align-items-center gap-2 mb-2">
-              <button class="btn btn-outline-light btn-sm" @click="disminuir(p.id)">-</button>
-              <span class="text-white">{{ cantidad[p.id] || 1 }}</span>
-              <button class="btn btn-outline-light btn-sm" @click="aumentar(p.id)">+</button>
+              <button class="btn btn-sm" :class="tema === 'dark' ? 'btn-outline-light' : 'btn-outline-dark'" @click="disminuir(p.id)">-</button>
+              <span :class="tema === 'dark' ? 'text-white' : 'text-dark'">{{ cantidad[p.id] || 1 }}</span>
+              <button class="btn btn-sm" :class="tema === 'dark' ? 'btn-outline-light' : 'btn-outline-dark'" @click="aumentar(p.id)">+</button>
             </div>
             <button class="btn btn-danger w-100">
               <i class="bi bi-cart-plus me-2"></i>Agregar
@@ -31,22 +31,15 @@ import { obtenerProductos, obtenerProductosPorCategoria } from '@/services/produ
 export default {
   name: 'HomeView',
   props: {
-    categoria: {
-      type: String,
-      default: ''
-    }
+    categoria: { type: String, default: '' },
+    tema: { type: String, default: 'dark' }
   },
   data() {
-    return {
-      productos: [],
-      cantidad: {}
-    }
+    return { productos: [], cantidad: {} }
   },
   methods: {
     cargar() {
-      this.productos = this.categoria
-        ? obtenerProductosPorCategoria(this.categoria)
-        : obtenerProductos()
+      this.productos = this.categoria ? obtenerProductosPorCategoria(this.categoria) : obtenerProductos()
     },
     aumentar(id) {
       if (!this.cantidad[id]) this.cantidad[id] = 1
@@ -57,13 +50,7 @@ export default {
       if (this.cantidad[id] > 1) this.cantidad[id]--
     }
   },
-  mounted() {
-    this.cargar()
-  },
-  watch: {
-    categoria() {
-      this.cargar()
-    }
-  }
+  mounted() { this.cargar() },
+  watch: { categoria() { this.cargar() } }
 }
 </script>

@@ -3,7 +3,7 @@
     <div class="card bg-dark border-secondary p-4" style="max-width: 400px; width: 100%;">
       
       <div class="text-center mb-4">
-        <h1 class="text-danger fw-bold">⚽ FUTTZAP</h1>
+        <h1 class="text-danger fw-bold">FUTTZAP</h1>
         <p class="text-secondary">Tienda de zapatillas de fútbol</p>
       </div>
 
