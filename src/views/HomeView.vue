@@ -5,7 +5,7 @@
     <div class="row">
       <div class="col-md-4 mb-4" v-for="p in productos" :key="p.id">
         <div class="card h-100" :class="tema === 'dark' ? 'bg-dark border-secondary' : 'bg-light border-secondary'">
-          <img :src="p.imagen" class="card-img-top" :alt="p.nombre" style="height: 250px; width: 100%; object-fit: contain; background: #111; border-radius: 5px 5px 0 0;" />
+          <img :src="p.imagen" class="card-img-top" :alt="p.nombre" style="height: 250px; width: 100%; object-fit: contain; background: #fff; border-radius: 5px 5px 0 0;" />
           <div class="card-body d-flex flex-column">
             <h5 class="card-title" :class="tema === 'dark' ? 'text-white' : 'text-dark'">{{ p.nombre }}</h5>
             <p class="text-secondary small">{{ p.categoria }}</p>
